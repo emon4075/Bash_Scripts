@@ -1,0 +1,90 @@
+<pre><font color="#55FF55">emon</font>@emon-HP-Laptop-15s-eq1xxx <font color="#00AA00">~/B/03_Variables</font> (master)&gt; <font color="#005FD7">/usr/bin/bash</font>
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ myName=&quot;Emon&quot;
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ echo myName
+myName
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ echo $myName 
+Emon
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ echo $newVariable
+
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ ls=&quot;Hello world&quot;
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ ls
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ $ls
+Command &apos;Hello&apos; not found, did you mean:
+  command &apos;hello&apos; from snap hello (2.10)
+  command &apos;jello&apos; from deb jello (1.5.2-1)
+  command &apos;hello&apos; from deb hello (2.10-2ubuntu4)
+  command &apos;hello&apos; from deb hello-traditional (2.10-5)
+See &apos;snap info &lt;snapname&gt;&apos; for additional versions.
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ echo $ls
+Hello world
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ nvim myScript.sh
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ chmod +x myScript.sh 
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ ls -l
+total 4
+-rwxrwxr-x 1 emon emon 96 জানু       2 09:04 <font color="#00AA00"><b>myScript.sh</b></font>
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ ./myScript.sh 
+Hello,I am Emon.
+I am 20 years old!
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ nvim myscript.sh
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ ls
+myscript.sh  <font color="#00AA00"><b>myScript.sh</b></font>
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ rm myscript.sh 
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ ls
+<font color="#00AA00"><b>myScript.sh</b></font>
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ nvim myScript.sh 
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ ./myScript.sh
+Today is Awesome
+Winter days are Awesome
+Kacchi is Awesome to eat
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ nvim myScript.sh 
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ ./myScript.sh
+Today is Fun
+Winter days are Fun
+Kacchi is Fun to eat
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ file=$(ls)
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ echo $f
+$file  $flag  
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ echo $file
+myScript.sh
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ file=$(pwd)
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ echo $file
+/home/emon/Bash_Scripts/03_Variables
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ date
+মঙ্গলবার 02 জানু 2024 09:28:52 পূর্বাহ্ণ +06
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ nvim myScript.sh 
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ ./myScript.sh
+Hello,I am Emon.
+I am 20 years old!
+Today is Fun
+Winter days are Fun
+Kacchi is Fun to eat
+Today&apos;s Time and Date is: মঙ্গলবার 02 জানু 2024 09:30:27 পূর্বাহ্ণ +06
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ nvim myScript.sh 
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ ./myScript.sh
+Hello,I am Emon.
+Today&apos;s Date is: 
+You User Name: emon
+Today is Fun
+Winter days are Fun
+Kacchi is Fun to eat
+Today&apos;s Time and Date is: মঙ্গলবার 02 জানু 2024 09:45:09 পূর্বাহ্ণ +06
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ nvim myScript.sh 
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ ./myScript.sh
+Hello,I am Emon.
+Today&apos;s Date is: 
+You User Name: emon
+Today is Fun.
+Winter days are Fun.
+Kacchi is Fun to eat.
+Today&apos;s Time and Date is: মঙ্গলবার 02 জানু 2024 09:45:51 পূর্বাহ্ণ +06 .
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ nvim myScript.sh 
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ ./myScript.sh
+Hello,I am Emon.
+Today&apos;s Date is: মঙ্গলবার 02 জানু 2024 09:46:47 পূর্বাহ্ণ +06
+You User Name: emon
+Today is Fun.
+Winter days are Fun.
+Kacchi is Fun to eat.
+Today&apos;s Time and Date is: মঙ্গলবার 02 জানু 2024 09:46:47 পূর্বাহ্ণ +06 .
+<font color="#00AA00"><b>emon@emon-HP-Laptop-15s-eq1xxx</b></font>:<font color="#0000AA"><b>~/Bash_Scripts/03_Variables</b></font>$ 
+</pre>
