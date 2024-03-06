@@ -14,4 +14,4 @@ Mul=$((myNum1 * myNum2))
 echo "Multiplication is: $Mul"
 
 Div=$((myNum1 / myNum2))
-echo "Dvision is: $Div"
+echo "Dvision is: $Div
